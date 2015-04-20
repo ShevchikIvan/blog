@@ -99,3 +99,6 @@ Keep track of Ghost development and Ghost community activity.
 ## Copyright & License
 
 Copyright (c) 2013-2015 Ghost Foundation - Released under the [MIT license](LICENSE).
+
+## Changelog
+
