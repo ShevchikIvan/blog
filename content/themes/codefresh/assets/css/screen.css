@@ -7,6 +7,42 @@ body {
     font-family: "Open Sans",Arial,sans-serif;
 }
 
+/**
+ * Codefresh version of the navbar (transparent-ish)
+ */
+.navbar-codefresh {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 50px;
+}
+.navbar-codefresh .active > a {
+    background-color: #f1c40f !important;
+}
+.navbar-codefresh * {
+    color: #fff !important;
+}
+
+/**
+ * Forms
+ */
+.btn,
+.form-control {
+    border-radius: 0px;
+}
+
+/**
+ * Codefresh button styles
+ */
+.btn {
+    border-width: 0px;
+}
+.btn-primary {
+    background-color: #f1c40f !important;
+}
+
+/**
+ * Everything in the footer
+ */
 #footer {
     background-color: #2e2e2e;
 }
@@ -29,18 +65,9 @@ body {
 #footer .highlight {
     color: #1ABC9C;
 }
-
-/**
- * Codefresh version of the navbar (transparent-ish)
- */
-.navbar-codefresh {
-    background-color: transparent;
-    border-color: transparent;
-    margin-top: 50px;
-}
-.navbar-codefresh .active > a {
-    background-color: #f1c40f !important;
-}
-.navbar-codefresh * {
-    color: #fff !important;
+/* Special form styles in the footer */
+.form-control {
+    background-color: #606163;
+    border-width: 0px;
+    color: #fff;
 }
