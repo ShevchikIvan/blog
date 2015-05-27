@@ -1,0 +1,7 @@
+{
+  "name": "codefresh",
+  "dependencies": {
+    "bootstrap": "",
+    "jquery": ""
+  }
+}

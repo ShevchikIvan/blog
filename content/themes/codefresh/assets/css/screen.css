@@ -1,0 +1,36 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Open Sans",Arial,sans-serif;
+}
+
+#footer {
+    background-color: #2e2e2e;
+    color: #838383;
+}
+#footer h2 {
+    border-bottom: 1px solid #606163;
+    color: #fff;
+    font-family: Podkova,Georgia,serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 12px;
+}
+
+/**
+ * Codefresh version of the navbar (transparent-ish)
+ */
+.navbar-codefresh {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 50px;
+}
+.navbar-codefresh .active > a {
+    background-color: #f1c40f !important;
+}
+.navbar-codefresh * {
+    color: #fff !important;
+}
