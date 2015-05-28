@@ -9,8 +9,6 @@ body {
 
 #header {
     background-color: #1ABC9C;
-    padding-top: 50px;
-    padding-bottom: 25px;
 }
 
 /**
@@ -19,12 +17,17 @@ body {
 .navbar-codefresh {
     background-color: transparent;
     border-color: transparent;
+    border-width: 0px;
 }
 .navbar-codefresh .active > a {
     background-color: #f1c40f !important;
 }
 .navbar-codefresh * {
     color: #fff !important;
+}
+.navbar-codefresh .navbar-brand img {
+    position: relative;
+    top: -3px;
 }
 
 /**

@@ -1,6 +1,6 @@
 {{! Previous/next page links - only displayed on page 2+ }}
 <div class="row">
-    <div class="extra-pagination inner col-xs-6 col-xs-offset-3">
+    <div class="extra-pagination inner col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
         {{pagination}}
     </div>
 </div>
@@ -8,7 +8,7 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
 <div class="row">
-    <article class="{{post_class}} col-xs-6 col-xs-offset-3">
+    <article class="{{post_class}} col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
         <header class="post-header">
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
         </header>
@@ -27,7 +27,7 @@
 
 {{! Previous/next page links - displayed on every page }}
 <div class="row">
-    <div class="col-xs-6 col-xs-offset-3">
+    <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
         {{pagination}}
     </div>
 </div>
