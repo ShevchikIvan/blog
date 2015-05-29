@@ -6,6 +6,10 @@ body {
 body {
     font-family: "Open Sans",Arial,sans-serif;
 }
+.post-title,
+#footer h2 {
+    font-family: Podkova,Georgia,serif;
+}
 
 #header {
     background-color: #1ABC9C;
@@ -62,7 +66,6 @@ body {
 #footer h2 {
     border-bottom: 1px solid #606163;
     color: #fff;
-    font-family: Podkova,Georgia,serif;
     font-weight: bold;
     font-size: 24px;
     padding-bottom: 12px;
@@ -71,9 +74,6 @@ body {
     font-size: 12px;
 
 }
-#footer .highlight {
-    color: #1ABC9C;
-}
 /* Special form styles in the footer */
 .form-control {
     background-color: #606163;
@@ -81,3 +81,31 @@ body {
     color: #fff;
 }
 
+/**
+ * Posts
+ */
+
+.post-title {
+    font-weight: bold;
+    font-size: 3rem !important;
+    margin-bottom: 0;
+}
+#footer .highlight,
+.post-title > a {
+    color: #1ABC9C;
+}
+.post-excerpt {
+    font-size: 12px;
+}
+.post-excerpt p {
+    line-height: 1.3em !important;
+    margin-bottom: 1rem !important;
+}
+.post-meta {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+.post-meta * {
+    color: #333 !important;
+    font-size: 12px;
+}
