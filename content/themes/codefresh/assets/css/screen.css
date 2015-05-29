@@ -6,6 +6,8 @@ body {
 body {
     font-family: "Open Sans",Arial,sans-serif;
 }
+.hero h1,
+.hero h2,
 .post-title,
 #footer h2 {
     font-family: Podkova,Georgia,serif;
@@ -13,6 +15,13 @@ body {
 
 #header {
     background-color: #1ABC9C;
+}
+/* green text */
+.hero h1,
+.hero h2,
+#footer .highlight,
+.post-title > a {
+    color: #1ABC9C;
 }
 
 /**
@@ -22,6 +31,7 @@ body {
     background-color: transparent;
     border-color: transparent;
     border-width: 0px;
+    margin-bottom: 0px !important;
 }
 .navbar-codefresh .active > a {
     background-color: #f1c40f !important;
@@ -84,15 +94,10 @@ body {
 /**
  * Posts
  */
-
 .post-title {
     font-weight: bold;
     font-size: 3rem !important;
     margin-bottom: 0;
-}
-#footer .highlight,
-.post-title > a {
-    color: #1ABC9C;
 }
 .post-excerpt {
     font-size: 12px;
@@ -108,4 +113,19 @@ body {
 .post-meta * {
     color: #333 !important;
     font-size: 12px;
+}
+
+/**
+ * Hero unit (big unit on the top of the homepage)
+ */
+.hero {
+    background: #1ABC9C no-repeat center center;
+    background-size: cover;
+    padding: 5rem 0 10rem 0;
+    margin-bottom: 5rem;
+}
+
+.hero h1,
+.hero h2 {
+    font-weight: bold;
 }
