@@ -1,0 +1,22 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+<div class="hero" {{#if @blog.cover}}style="background-image: url({{@blog.cover}}){{/if}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-5">
+                <h1>Node.js, io.js, Docker &amp; everything in between ;)</h1>
+                <h2>welcome to our blog!</h2>
+                <a href="#" class="btn btn-primary btn-lg">Sign up now for free</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{! The main content area on the homepage }}
+<main id="content" class="content container" role="main">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> loop}}
+
+</main>

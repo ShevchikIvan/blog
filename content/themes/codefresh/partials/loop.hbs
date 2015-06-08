@@ -1,0 +1,46 @@
+{{! Previous/next page links - only displayed on page 2+ }}
+<div class="row">
+    <div class="extra-pagination inner col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        {{pagination}}
+    </div>
+</div>
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<div class="row">
+    <article class="{{post_class}} col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+
+        <div class="row">
+            <div class="col-md-6">
+                {{#if image}}
+                    <a href="{{url}}"><img src={{image}} alt={{title}} class="post-image-thumb img-responsive" /></a>
+                {{/if}}
+            </div>
+            <div class="col-md-6">
+                <header class="post-header">
+                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+
+                    <footer class="post-meta">
+                        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
+                        <strong>{{author}}</strong>
+                        {{tags prefix=" on "}}
+                        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+                    </footer>
+
+                    <section class="post-excerpt">
+                        <p>{{excerpt words="50"}}...</p>
+                        <a class="btn btn-primary btn-xs" href="{{url}}">Read More &raquo;</a>
+                    </section>
+                </header>
+            </div>
+        </div>
+    </article>
+</div>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        {{pagination}}
+    </div>
+</div>

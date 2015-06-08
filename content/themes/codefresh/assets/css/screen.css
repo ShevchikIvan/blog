@@ -1,0 +1,131 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Open Sans",Arial,sans-serif;
+}
+.hero h1,
+.hero h2,
+.post-title,
+#footer h2 {
+    font-family: Podkova,Georgia,serif;
+}
+
+#header {
+    background-color: #1ABC9C;
+}
+/* green text */
+.hero h1,
+.hero h2,
+#footer .highlight,
+.post-title > a {
+    color: #1ABC9C;
+}
+
+/**
+ * Codefresh version of the navbar (transparent-ish)
+ */
+.navbar-codefresh {
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 0px;
+    margin-bottom: 0px !important;
+}
+.navbar-codefresh .active > a {
+    background-color: #f1c40f !important;
+}
+.navbar-codefresh * {
+    color: #fff !important;
+}
+.navbar-codefresh .navbar-brand img {
+    position: relative;
+    top: -3px;
+}
+
+/**
+ * Forms
+ */
+.btn,
+.form-control {
+    border-radius: 0px;
+}
+
+/**
+ * Codefresh button styles
+ */
+.btn {
+    border-width: 0px;
+}
+.btn-primary {
+    background-color: #f1c40f !important;
+}
+
+/**
+ * Everything in the footer
+ */
+#footer {
+    background-color: #2e2e2e;
+    padding-top: 20px;
+}
+#footer,
+#footer a {
+    color: #838383;
+}
+#footer h2 {
+    border-bottom: 1px solid #606163;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 12px;
+}
+#footer p {
+    font-size: 12px;
+
+}
+/* Special form styles in the footer */
+.form-control {
+    background-color: #606163;
+    border-width: 0px;
+    color: #fff;
+}
+
+/**
+ * Posts
+ */
+.post-title {
+    font-weight: bold;
+    font-size: 3rem !important;
+    margin-bottom: 0;
+}
+.post-excerpt {
+    font-size: 12px;
+}
+.post-excerpt p {
+    line-height: 1.3em !important;
+    margin-bottom: 1rem !important;
+}
+.post-meta {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+.post-meta * {
+    color: #333 !important;
+    font-size: 12px;
+}
+
+/**
+ * Hero unit (big unit on the top of the homepage)
+ */
+.hero {
+    background: #1ABC9C no-repeat center center;
+    background-size: cover;
+    padding: 5rem 0 10rem 0;
+    margin-bottom: 5rem;
+}
+
+.hero h1,
+.hero h2 {
+    font-weight: bold;
+}
