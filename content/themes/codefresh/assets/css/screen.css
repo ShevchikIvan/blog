@@ -118,9 +118,12 @@ body {
 /**
  * Hero unit (big unit on the top of the homepage)
  */
+.hero-wrapper {
+    background: linear-gradient(15deg, #eaeaea 50%,#ffffff 100%);
+}
 .hero {
-    background: #1ABC9C no-repeat center center;
-    background-size: cover;
+    background: transparent no-repeat top center;
+    background-size: 1004px !important;
     padding: 5rem 0 10rem 0;
     margin-bottom: 5rem;
 }
