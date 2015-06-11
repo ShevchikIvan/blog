@@ -40,7 +40,7 @@
      * @return {boolean}
      */
     function signUp(e, cb) {
-        var $form = $(this);
+        var $form = $(e.target);
         var $name = $form.find('[name="FULLNAME"]');
         var $email = $form.find('[name="EMAIL"]');
 
