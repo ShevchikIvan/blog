@@ -93,9 +93,10 @@ middleware = {
         subPath = path.replace(/^(\/.*?\/.*?\/)(.*)?/, function (match, a) {
             return a;
         });
-
+        
         if (subPath.indexOf('/ghost/api/') === 0
-            && path.indexOf('/ghost/api/v0.1/authentication/') !== 0) {
+            && path.indexOf('/ghost/api/v0.1/authentication/') !== 0
+            && path.indexOf('/ghost/api/v0.1/signup') !== 0) {
             return passport.authenticate('bearer', {session: false, failWithError: true},
                 function (err, user, info) {
                     if (err) {

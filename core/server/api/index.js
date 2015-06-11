@@ -20,6 +20,7 @@ var _              = require('lodash'),
     slugs          = require('./slugs'),
     authentication = require('./authentication'),
     uploads        = require('./upload'),
+    signup         = require('./signup'),
     dataExport     = require('../data/export'),
     errors         = require('../errors'),
 
@@ -274,7 +275,8 @@ module.exports = {
     users: users,
     slugs: slugs,
     authentication: authentication,
-    uploads: uploads
+    uploads: uploads,
+    signup: signup
 };
 
 /**

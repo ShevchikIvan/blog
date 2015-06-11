@@ -90,6 +90,9 @@ apiRoutes = function (middleware) {
     // ## Uploads
     router.post('/uploads', middleware.busboy, api.http(api.uploads.add));
 
+    // ## Beta Signups
+    router.post('/signup', api.http(api.signup.create))
+
     return router;
 };
 
