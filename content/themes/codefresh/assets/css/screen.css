@@ -132,3 +132,8 @@ body {
 .hero h2 {
     font-weight: bold;
 }
+
+/* hide the signup form by default in the header */
+.hero form {
+    display: none;
+}
