@@ -5,7 +5,6 @@ var _                = require('lodash'),
     errors           = require('../errors'),
     signup;
 
-console.log(config);
 var mcapi = require('mailchimp-api');
 var mc = new mcapi.Mailchimp(config.production.mailchimp.apikey);
 
