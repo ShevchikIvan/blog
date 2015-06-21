@@ -25,6 +25,11 @@ config = {
             host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: '2368'
+        },
+        mailchimp: {
+            baseUrl: 'https://us9.api.mailchimp.com/3.0/',
+            apikey: 'a8ea73d67639a67baf97fae821099129-us9',
+            listId: '21e2b00b43'
         }
     },
 
@@ -64,6 +69,11 @@ config = {
         },
         paths: {
             contentPath: path.join(__dirname, '/content/')
+        },
+        mailchimp: {
+            baseUrl: 'https://us9.api.mailchimp.com/3.0/',
+            apikey: 'a8ea73d67639a67baf97fae821099129-us9',
+            listId: '21e2b00b43'
         }
     },
 
