@@ -24,6 +24,10 @@ body {
     color: #1ABC9C;
 }
 
+#content {
+    margin-top: 50px;
+}
+
 /**
  * Codefresh version of the navbar (transparent-ish)
  */
@@ -96,10 +100,15 @@ body {
  */
 .post-title {
     font-weight: bold;
+    font-size: 3rem !important;
+    margin-bottom: 0;
+}
+.post-template .post-title {
+    font-weight: bold;
     font-size: 4rem !important;
     margin-bottom: 0;
 }
-.post-header {
+.post-template .post-header {
     margin-top: 50px;
 }
 .post-excerpt {
@@ -123,6 +132,12 @@ body {
  */
 .hero-wrapper {
     background: linear-gradient(15deg, #eaeaea 50%,#ffffff 100%);
+    height: 94vh;
+}
+.hero-background {
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
 }
 .hero {
     background: transparent no-repeat top center;
@@ -139,4 +154,9 @@ body {
 /* hide the signup form by default in the header */
 .hero form {
     display: none;
+}
+.hero .form-control {
+    background-color: #fff;
+    border-width: 1px;
+    color: #606163;
 }
