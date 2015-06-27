@@ -96,8 +96,11 @@ body {
  */
 .post-title {
     font-weight: bold;
-    font-size: 3rem !important;
+    font-size: 4rem !important;
     margin-bottom: 0;
+}
+.post-header {
+    margin-top: 50px;
 }
 .post-excerpt {
     font-size: 12px;
