@@ -118,6 +118,7 @@ body {
 .post-excerpt p {
     line-height: 1.3em !important;
     margin-bottom: 1rem !important;
+    font-size: 1.3rem !important;
 }
 .post-meta {
     margin-top: 1rem !important;
