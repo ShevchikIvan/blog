@@ -25,7 +25,8 @@ body {
 }
 
 #content {
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 /**
@@ -117,6 +118,7 @@ body {
 .post-excerpt p {
     line-height: 1.3em !important;
     margin-bottom: 1rem !important;
+    font-size: 1.3rem !important;
 }
 .post-meta {
     margin-top: 1rem !important;
@@ -125,6 +127,9 @@ body {
 .post-meta * {
     color: #333 !important;
     font-size: 12px;
+}
+.post-content img {
+    max-width: 100% !important;
 }
 
 /**
@@ -142,7 +147,7 @@ body {
 .hero {
     background: transparent no-repeat top center;
     background-size: 1004px !important;
-    padding: 5rem 0 10rem 0;
+    padding: 10rem 0;
     margin-bottom: 5rem;
 }
 
