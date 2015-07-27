@@ -5,6 +5,9 @@
 
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
+{{#if image}}
+    <div class="post-background" style="background-image: url({{image}})"></div>
+{{/if}}
 
 <main class="content container" role="main">
     <div class="row">
@@ -16,6 +19,7 @@
                     <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
                 </section>
             </header>
+
 
             <section class="post-content">
                 {{content}}
@@ -70,7 +74,7 @@
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES * * */
             var disqus_shortname = 'codefresh';
-            
+
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
