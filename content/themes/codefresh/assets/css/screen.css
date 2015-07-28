@@ -217,9 +217,19 @@ body {
     font-weight: 600;
     font-size: 16px;
     box-shadow: 0 0 0 6pt rgba(255,255,255,.3);
-    color: #fff;
+    color: #fff !important;
     text-transform: uppercase;
     transition: box-shadow 200ms, background-color 200ms;
+}
+
+.btn-signup:hover, .btn-signup:focus {
+    background-color: #f1c40f;
+    color: #fff;
+    box-shadow: 0 0 0 6pt rgba(255,255,255,.45);
+}
+
+.btn-signup-footer {
+    
 }
 
 .hero-background {
