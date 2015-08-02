@@ -123,7 +123,15 @@ body {
  */
 
 .post {
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding-bottom: 6rem !important;
+    border-bottom: none !important;
+}
+
+.post::after {
+    display: none !important;
+}
 }
 
 .post-title {
