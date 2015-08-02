@@ -132,6 +132,10 @@ body {
 .post::after {
     display: none !important;
 }
+
+.post-background {
+    height: 0 !important;
+    padding-top: 56% !important; 
 }
 
 .post-title {
