@@ -135,7 +135,7 @@ body {
 
 .post-background {
     height: 0 !important;
-    padding-top: 56% !important; 
+    padding-top: 28% !important;
 }
 
 .post-title {
@@ -176,6 +176,29 @@ body {
 }
 .post-content img {
     max-width: 100% !important;
+}
+
+.post-row {
+    display: table;
+    float: none;
+}
+.post-col {
+    display: table-cell;
+    height: 100%;
+    float: none;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+}
+
+.post-col > a {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 /**
