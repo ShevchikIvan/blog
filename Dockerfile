@@ -12,13 +12,24 @@ RUN apt-get clean
 #2. COPY
 COPY . /src
 
+
+#3. WORK DIR
+
+WORKDIR /src
+
 #3. RUN
 
-RUN mv /src/config.example.js /src/config.js
-RUN cd /src && npm install
-RUN cd /src && npm install --save mailchimp
-RUN cd /src && npm install --save mailchimp-api
-RUN cd /src && bower install --allow-root
-RUN cd /src/content/themes/codefresh && bower install --allow-root
-RUN cd /src && grunt init
+RUN sed 's/127.0.0.1/0.0.0.0/' config.example.js > config.js
+RUN npm install --production
+RUN npm install --save --production mailchimp
+RUN npm install --save --production mailchimp-api
+RUN bower install --allow-root
+RUN cd ./content/themes/codefresh && bower install --allow-root
+RUN grunt init
+RUN grunt prod
+
+CMD npm start
+
+
+EXPOSE 2368
 
