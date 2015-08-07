@@ -20,5 +20,5 @@ RUN cd /src && npm install --save mailchimp
 RUN cd /src && npm install --save mailchimp-api
 RUN cd /src && bower install --allow-root
 RUN cd /src/content/themes/codefresh && bower install --allow-root
-#RUN cd /src && grunt init
+RUN cd /src && grunt init
 
