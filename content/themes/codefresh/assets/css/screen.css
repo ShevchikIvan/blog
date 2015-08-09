@@ -24,6 +24,18 @@ body {
     color: #1ABC9C;
 }
 
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 22px;
+    }
+}
+
 #content {
     margin-top: 130px;
     margin-bottom: 50px;
@@ -129,6 +141,14 @@ body {
     border-bottom: none !important;
 }
 
+@media (max-width: 768px) {
+    .post {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+
 .post::after {
     display: none !important;
 }
@@ -143,11 +163,26 @@ body {
     font-size: 3rem !important;
     margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 2rem !important;
+    }
+}
+
 .post-template .post-title {
     font-weight: bold;
     font-size: 4rem !important;
     margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+    .post-template .post-title {
+        font-size: 2rem !important;
+    }
+}
+
+
 .post-template .post-header {
     margin-top: 50px;
 }
@@ -182,6 +217,7 @@ body {
     display: table;
     float: none;
 }
+
 .post-col {
     display: table-cell;
     height: 100%;
@@ -199,6 +235,20 @@ body {
     width: 100%;
     background-position: center;
     background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .post-row {
+        display: block;
+    }
+
+    .post-col {
+        display: block;
+    }
+
+    .post-image {
+        min-height: 200px;
+    }
 }
 
 /**
