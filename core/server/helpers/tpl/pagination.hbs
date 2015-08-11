@@ -1,9 +1,22 @@
 <nav class="pagination" role="navigation">
+
     {{#if prev}}
-        <a class="newer-posts" href="{{page_url prev}}">&larr; Newer Posts</a>
+        <a class="newer-posts" href="{{page_url prev}}"><< <span class="hidden-xs">Newer Posts</span></a>
+    {{else}}
+        <a class="newer-posts disabled" href="javascript:void(0)"><< <span class="hidden-xs">Newer Posts</span></a>
     {{/if}}
-    <span class="page-number">Page {{page}} of {{pages}}</span>
+
+    {{#each items}}
+        {{#if this.active}}
+            <a href="{{page_url this.page}}" class="page-number active">{{this.page}}</a>
+        {{else}}
+            <a href="{{page_url this.page}}" class="page-number">{{this.page}}</a>
+        {{/if}}
+    {{/each}}
+
     {{#if next}}
-        <a class="older-posts" href="{{page_url next}}">Older Posts &rarr;</a>
+        <a class="older-posts" href="{{page_url next}}"><span class="hidden-xs">Older Posts</span> >></a>
+    {{else}}
+        <a class="older-posts disabled" href="javascript:void(0)"><span class="hidden-xs">Older Posts</span> >></a>
     {{/if}}
 </nav>

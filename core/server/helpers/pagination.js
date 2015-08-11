@@ -28,6 +28,15 @@ pagination = function (options) {
         return errors.logAndThrowError('Invalid value, check page, pages, limit and total are numbers');
     }
 
+    this.pagination.items = [];
+
+    for ( var i = 1; i <= this.pagination.pages; i++ ) {
+        this.pagination.items.push({
+            page: i,
+            active: i === this.pagination.page
+        });
+    }
+
     var context = _.merge({}, this.pagination);
 
     if (this.tag !== undefined) {
