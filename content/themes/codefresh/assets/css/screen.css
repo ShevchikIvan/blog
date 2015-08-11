@@ -31,6 +31,14 @@ body {
 }
 
 @media (max-width: 768px) {
+    article.post {
+        margin-top: 28px !important;
+        margin-bottom: 28px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+@media (max-width: 768px) {
     .hero h2 {
         font-size: 22px;
     }
@@ -274,6 +282,7 @@ body {
     }
 
     .post-image {
+        margin-bottom: 40px;
         min-height: 200px;
     }
 }
