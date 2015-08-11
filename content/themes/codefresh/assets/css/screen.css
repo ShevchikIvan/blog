@@ -26,7 +26,7 @@ body {
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 26px;
+        font-size: 32px;
     }
 }
 
@@ -113,6 +113,7 @@ body {
 .navbar-codefresh * {
     color: #fff !important;
 }
+
 .navbar-codefresh .navbar-brand img {
     position: relative;
     top: -3px;
@@ -312,6 +313,13 @@ body {
     vertical-align: middle;
 }
 
+@media (max-width: 768px) {
+    .hero > .container {
+        padding-top: 100px;
+        display: block;
+    }
+}
+
 .hero h1,
 .hero h2 {
     font-weight: bold;
@@ -351,6 +359,12 @@ body {
 
 .hero-background {
     background-image: url('../bg.jpg');
+}
+
+@media (max-width: 768px) {
+    .hero-background {
+        background-image: url('../bg_mobile.jpg');
+    }
 }
 
 .post-background {
