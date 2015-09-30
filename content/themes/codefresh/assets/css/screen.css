@@ -406,3 +406,101 @@ body {
 .pagination {
     display: block;
 }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.request-demo-result {
+  font-family: "Open Sans";
+  font-size: 22px;
+  line-height: 64px;
+  color: #fff;
+}
+
+.request-loader {
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.request-demo-form {
+  position: relative;
+  display: inline-block !important;
+  height: 64px;
+  width: 100%;
+}
+
+.request-demo-form .btn-request-form-input {
+  display: none;
+  max-width: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 74px;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-style: none;
+  border-radius: 35px;
+  width: 200px;
+  font-size: 18px;
+  height: 64px;
+  color: #838383;
+  box-sizing: border-box;
+  transition: width 200ms;
+  border: 1px solid transpatent;
+}
+
+footer .btn-request-form-input {
+  color: #fff !important;
+}
+
+.request-demo-form .btn-request-demo {
+  margin-top: 4px;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 30px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: box-shadow 200ms, background-color 200ms, width 200ms;
+  background-color: #f1c40f;
+  color: #fff;
+  box-shadow: 0 0 0 6pt rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.request-demo-form .btn-request-demo:hover {
+  box-shadow: 0 0 0 6pt rgba(255, 255, 255, 0.45);
+}
+
+.request-demo-form.has-error .btn-request-form-input {
+  border: 1px solid red;
+}
+
+.request-demo-form.is-form .btn-request-form-input {
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+}
+
+.request-demo-form.is-form .btn-request-demo {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  margin-top: 0;
+  padding: 15px;
+  width: 52px;
+  box-shadow: none;
+}
+
+.request-demo-form.is-loading .btn-request-demo {
+  background-color: #00BD9C;
+}

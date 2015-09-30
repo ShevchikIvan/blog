@@ -1,7 +1,8 @@
 {
   "name": "codefresh",
   "dependencies": {
-    "bootstrap": "",
-    "jquery": ""
+    "bootstrap": "3.3.5",
+    "angular": "1.3.16",
+    "ng-focus-on": "0.2.2"
   }
 }
