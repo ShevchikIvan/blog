@@ -454,6 +454,7 @@ body {
   box-sizing: border-box;
   transition: width 200ms;
   border: 1px solid transpatent;
+  outline: none !important;
 }
 
 footer .btn-request-form-input {
@@ -475,6 +476,7 @@ footer .btn-request-form-input {
   color: #fff;
   box-shadow: 0 0 0 6pt rgba(255, 255, 255, 0.3);
   cursor: pointer;
+  outline: none !important;
 }
 
 .request-demo-form .btn-request-demo:hover {
