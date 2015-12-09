@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
     {{! Styles'n'Scripts }}
-    <link href="{{asset "bower_components/bootstrap/dist/css/bootstrap.css"}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="{{asset "assets/css/screen.css"}}" rel="stylesheet" type="text/css" />
     <link href="{{asset "assets/css/casper.css"}}" rel="stylesheet" type="text/css" />
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
@@ -46,7 +46,10 @@
 
     {{! The main JavaScript file for Casper }}
 
-    <script type="text/javascript" src="{{asset "bower_components/bootstrap/dist/js/bootstrap.min.js"}}"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script type="text/javascript" src="{{asset "js/ng-focus-on.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
     <script>

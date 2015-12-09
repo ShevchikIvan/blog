@@ -7,7 +7,7 @@
       return {
           scope: true,
           replace: true,
-          templateUrl: 'partials/request.demo.html',
+          templateUrl: '/partials/request.demo.html',
           controllerAs: 'vm',
           controller: function($scope, $http, $timeout, focus) {
             var vm = this;
